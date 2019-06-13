@@ -1,0 +1,45 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-color: whitesmoke;
+    color: darkslategray;
+    font-size: 1em;
+}
+
+/* MENU IZQUIERDA */
+/*-------------------------------------------------------------------------------*/
+nav.menu {
+    float: left;
+}
+/*ul[class^='menu'] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}*/
+ul[class^='menu'] ul[class^='submenu'], ul[class^='submenu'] ul[class^='trimenu'] {
+    display: none;
+}
+/*-------------------------------------------------------------------------------*/
+ul[class*='menu'] {
+    list-style: none;
+}
+ul[class^='menu'] li[class^='Item'] {
+    position: relative;
+}
+/*-------------------------------------------------------------------------------*/
+li:hover {
+    background-color: rgba(0,0,0,.3);
+    cursor: pointer;
+    border: 2px solid grey;
+}
+li[class^='Item']:hover ul[class^='submenu'] {
+    display: block;
+}
+li[class^='subItem']:hover ul[class^='trimenu'] {
+    display: inline;
+}

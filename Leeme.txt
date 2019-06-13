@@ -1,0 +1,32 @@
+Proyecto: Menus metadatizados de 3 niveles.
+
+He intentado hacer un menu configurable mediante un JSON. De momento el JSON está en un fichero js. 
+He intentado subir todas las características-propiedades al JSON como metadata. Aunque no he podido subir todas; ya que el menu se crea a partir del
+tag:
+
+        <nav class="menu">
+        </nav
+
+mMetaMenu contiene los menus y submenus a crear con sus parámetros, básicamente actuan sobre la etiqueta ul
+Los otros menus mMenuXXX contien las opciones de cada menu y submenú, básicamente actuan sobre la etiqueta li
+
+He realizado tres variantes del menú, como ejemplo:
+
+MENU ARRIBA
+index_menu_arriba.html
+style_arriba.css
+data_menu_arriba.js
+
+MENU IZQUIERDA
+index_menu_izquierda.html
+style_izquierda.css
+data_menu_izquierda.js
+
+MENU DERECHA
+index_menu_derecha.html
+style_derecha.css
+data_menu_derecha.js
+
+Los tres comparten el menu.js donde está la construcción del mismo.
+
+José Carlos Jordán Vergara
